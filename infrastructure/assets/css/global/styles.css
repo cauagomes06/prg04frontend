@@ -1,12 +1,30 @@
 .audio-container {
-    margin-bottom: 50px;
-    margin-top: 100px;
+  margin-bottom: 50px;
+  margin-top: 100px;
 }
 .audio-container h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
 }
-.video-container h2{
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
+.video-container h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.cor1 {
+  background-color: #0bf0a8;
+  color: black;
+  width: 200px;
+  height: 200px;
+}
+.cor2 {
+  background-color: #0857f3;
+  color: black;
+  width: 200px;
+  height: 200px;
+}
+.cor3 {
+  background-color: #0ad354;
+  color: black;
+  width: 200px;
+  height: 200px;
 }
