@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <link
+      rel="stylesheet"
+      href="/infrastructure/assets/css/global/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="../assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="navbar">
+        <a href="" class="logo">
+          <img src="../assets/images/principal.png" alt="Fit-Hub Logo" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#" id="abrirModalPlanos">PLANOS</a></li>
+            <li><a href="#">CONTATO</a></li>
+            <li><a href="#">EVENTOS</a></li>
+            <li>
+              <button class="btn-login">Login</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="introduction-container">
+        <h2>Bem-vindo(a) ao</h2>
+        <p>Seu portal para uma vida saudável e ativa!</p>
+        <button class="btn">Comece Agora</button>
+      </section>
+
+      <section class="descricao-container">
+        <div class="descricao-text">
+          <h2>Ser fitness é...</h2>
+          <p>
+            ...uma jornada pessoal que promove uma vida mais saudável e
+            equilibrada.
+          </p>
+          <p>
+            Ao integrar a atividade física na sua rotina e adotar hábitos
+            saudáveis, você não apenas melhora sua condição física, mas também
+            enriquece sua qualidade de vida.
+          </p>
+          <p>
+            Comece hoje, dê um passo de cada vez e celebre cada conquista ao
+            longo do caminho. O compromisso com o fitness é um investimento
+            valioso em sua saúde e felicidade a longo prazo.
+          </p>
+          <div class="botoes-descricao">
+            <a href="#" class="btn-principal" id="abrirModalPlanos"
+              >Conheça Nossos Planos</a
+            >
+            <a href="#" class="btn-secundario">Ver Eventos</a>
+          </div>
+        </div>
+        <figure class="image-container-descricao">
+          <img
+            src="../assets/images/jonathan-borba-lrQPTQs7nQQ-unsplash.jpg"
+            alt="preparando para levantar um peso em uma academia."
+          />
+        </figure>
+      </section>
+
+      <section class="servicos-titulo">
+        <h2>Nossos Serviços</h2>
+        <p>
+          Descubra o que oferecemos para ajudar você a alcançar seus objetivos.
+        </p>
+      </section>
+
+      <section class="servicos-cards-container">
+        <div class="servico-card">
+          <i class="fa-solid fa-dumbbell"></i>
+          <h3>Treinos Personalizados</h3>
+          <p>Planos de treino adaptados às suas necessidades e objetivos.</p>
+        </div>
+        <div class="servico-card">
+          <i class="fa-solid fa-bicycle"></i>
+          <h3>Eventos</h3>
+          <p>
+            Participe de eventos exclusivos para membros e alcance suas metas
+            com motivação extra.
+          </p>
+        </div>
+        <div class="servico-card">
+          <i class="fa-solid fa-comments"></i>
+          <h3>Suporte e Comunidade</h3>
+          <p>
+            Acesse suporte especializado e conecte-se com outros entusiastas do
+            fitness.
+          </p>
+        </div>
+      </section>
+    </main>
+
+<div id="modalPlanos" class="modal-container">
+  <div class="modal-content">
+    <button class="fechar-modal" title="Fechar">&times;</button>
+    <h2>Escolha o Plano Ideal para Você</h2>
+    <p class="modal-subtitulo">Planos flexíveis para todos os objetivos.</p>
+    <div class="planos-wrapper">
+
+      <div class="plano-card">
+        <h3>Plano Fit</h3>
+        <p class="preco">R$ 89,90<span>/mês</span></p>
+        <ul>
+          <li>✅ Acesso completo à musculação</li>
+          <li>✅ Acesso aos vestiários</li>
+          <li>❌ Aulas em grupo</li>
+        </ul>
+        <a href="loginpage.html" class="btn-assinar-secundario">Assinar Agora</a>
+      </div>
+
+      <div class="plano-card destaque">
+        <span class="destaque-tag">MAIS POPULAR</span>
+        <h3>Plano Pro</h3>
+        <p class="preco">R$ 129,90<span>/mês</span></p>
+        <ul>
+          <li>✅ Acesso completo à musculação</li>
+          <li>✅ Acesso aos vestiários</li>
+          <li>✅ Aulas em grupo ilimitadas</li>
+        </ul>
+        <a href="loginpage.html" class="btn-assinar-principal">Assinar Agora</a>
+      </div>
+
+      <div class="plano-card">
+        <h3>Plano Premium</h3>
+        <p class="preco">R$ 159,90<span>/mês</span></p>
+        <ul>
+          <li>✅ Acesso completo à musculação</li>
+          <li>✅ Acesso aos vestiários</li>
+          <li>✅ Aulas em grupo ilimitadas</li>
+        </ul>
+        <a href="loginpage.html" class="btn-assinar-secundario">Assinar Agora</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+    
+    <footer>
+      <p>2025 Fit-Hub. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html> 

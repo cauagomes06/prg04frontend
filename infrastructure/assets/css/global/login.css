@@ -1,0 +1,186 @@
+/* Estilos Globais para a Página de Login */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+/* Container Principal - Layout de 2 Colunas */
+.login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+/* Coluna da Esquerda (Imagem) */
+.login-imagem {
+  background: linear-gradient(rgba(10, 211, 84, 0.8), rgba(8, 164, 65, 0.8)),
+    url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=2000'); /* Imagem de fundo genérica de academia */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+.login-imagem .logo-link img {
+    width: 150px;
+}
+.texto-boas-vindas h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+.texto-boas-vindas p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+
+/* Coluna da Direita (Formulário) */
+.login-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+}
+
+form h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.mensagem-plano {
+    background-color: #e6fff1;
+    color: #08a441;
+    border: 1px solid #b3e6c9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.input-grupo {
+  margin-bottom: 20px;
+}
+
+.input-grupo label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.input-grupo input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.input-grupo input:focus {
+    outline: none;
+    border-color: #0ad354;
+    box-shadow: 0 0 0 3px rgba(10, 211, 84, 0.2);
+}
+
+.link-esqueci-senha {
+  display: block;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  color: #0ad354;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.btn-login-principal {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0ad354;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-login-principal:hover {
+  background-color: #08a441;
+}
+
+.divisor {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0;
+  color: #aaa;
+}
+.divisor::before,
+.divisor::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+.divisor span {
+  padding: 0 15px;
+}
+
+.social-login .btn-social {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.btn-social.google {
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #ccc;
+}
+.btn-social.google:hover {
+    background-color: #f9f9f9;
+}
+.btn-social i {
+    font-size: 1.2rem;
+}
+
+
+.link-cadastro {
+  text-align: center;
+  margin-top: 20px;
+}
+.link-cadastro a {
+  color: #0ad354;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* --- Media Query para Responsividade --- */
+@media (max-width: 900px) {
+  .login-container {
+    grid-template-columns: 1fr;
+  }
+  .login-imagem {
+    display: none; /* Em telas pequenas, a imagem some para focar no formulário */
+  }
+  .login-formulario {
+      justify-content: flex-start;
+      padding-top: 60px;
+  }
+}
