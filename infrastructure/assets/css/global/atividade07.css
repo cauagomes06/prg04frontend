@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  font-family: sans-serif;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+nav#menu {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav#menu ul {
+  text-transform: uppercase;
+  position: relative;
+  background-color: #dfdfdd;
+  align-items: center;
+  display: flex;
+}
+nav#menu li {
+  list-style: none;
+  padding: 10px;
+  margin: 5px;
+  transition: 0.5s;
+}
+nav#menu li:hover {
+  background-color: #9b9b9b;
+}
+nav#menu a {
+  text-decoration: none;
+}
+
+
+/* Regras aplicadas quando a tela for menor que 600px */
+@media (max-width: 600px) {
+
+  nav#menu {
+    display: block;
+    flex-direction: column; 
+  }
+
+
+  nav#menu ul {
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+}
