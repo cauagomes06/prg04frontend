@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal do Membro - Fit-Hub</title>
+    <link rel="stylesheet" href="../assets/css/global/portal.css" />
+    <link rel="stylesheet" href="../assets/css/global/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="../assets/js/portal.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <h1>FIT-HUB</h1>
+    </header>
+
+    <div class="portal-container">
+      <aside class="portal-sidebar">
+        <button class="btn-fechar-sidebar" title="Fechar Menu">&times;</button>
+        <div class="perfil-usuario">
+          <img src="../assets/images/foto twitter.jpg" alt="Foto do Usuário" />
+          <h3>Olá, Carlos!</h3>
+          <p>Plano Pro</p>
+        </div>
+        <nav class="portal-menu">
+          <ul>
+            <li class="active">
+              <a href="#" data-target="anuncios"
+                ><i class="fas fa-bullhorn"></i> Anúncios</a
+              >
+            </li>
+            <li>
+              <a href="#" data-target="meu-treino"
+                ><i class="fas fa-dumbbell"></i> Meus Treinos</a
+              >
+            </li>
+            <li>
+              <a href="#" data-target="agenda"
+                ><i class="fas fa-calendar-alt"></i> Agenda de Aulas</a
+              >
+            </li>
+            <li>
+              <a href="#" data-target="competicoes"
+                ><i class="fas fa-trophy"></i> Competições</a
+              >
+            </li>
+            <li>
+              <a href="#" data-target="biblioteca-treinos"
+                ><i class="fas fa-book-open"></i> Biblioteca de Treinos</a
+              >
+            </li>
+
+            <li>
+              <a href="#" data-target="personais"
+                ><i class="fas fa-id-card-alt"></i> Nossos Personais</a
+              >
+            </li>
+
+            <li>
+              <a href="#" data-target="eventos"
+                ><i class="fas fa-star"></i> Eventos</a
+              >
+            </li>
+            <li>
+              <a href="#" data-target="contato"
+                ><i class="fas fa-headset"></i> Contato</a
+              >
+            </li>
+
+            <li class="menu-divider"></li>
+            <li>
+              <a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="portal-conteudo">
+        <button class="btn-toggle-sidebar">
+          <i class="fas fa-bars"></i> Menu
+        </button>
+
+        <div id="anuncios" class="portal-tab-content active">
+          <h1>Anúncios Recentes</h1>
+        </div>
+
+        <div id="meu-treino" class="portal-tab-content">
+          <h1>Meus Treinos</h1>
+          <p>Aqui ficará a sua ficha de treino semanal.</p>
+        </div>
+
+        <div id="agenda" class="portal-tab-content">
+          <h1>Agenda de Aulas</h1>
+          <p>
+            Selecione um dia no calendário para ver as aulas disponíveis e
+            reservar sua vaga.
+          </p>
+          <div class="agenda-container">
+            <div class="calendario">
+              <div class="calendario-header">
+                <button id="prev-month-btn" title="Mês Anterior">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <h2 id="current-month-year">Carregando...</h2>
+                <button id="next-month-btn" title="Próximo Mês">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="calendario-weekdays">
+                <div>Dom</div>
+                <div>Seg</div>
+                <div>Ter</div>
+                <div>Qua</div>
+                <div>Qui</div>
+                <div>Sex</div>
+                <div>Sáb</div>
+              </div>
+              <div id="calendar-days" class="calendario-days"></div>
+            </div>
+            <div class="aulas-do-dia">
+              <h3>Aulas do Dia</h3>
+              <div id="aulas-list">
+                <p class="sem-aulas">
+                  Selecione um dia com aulas para ver os horários.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>''
+
+        <div id="competicoes" class="portal-tab-content">
+          <h1>Competições</h1>
+          <p>
+            Aqui ficarão as informações sobre as próximas competições e
+            rankings.
+          </p>
+        </div>
+
+        <div id="personais" class="portal-tab-content">
+          <h1>Nossos Personais</h1>
+          <p>
+            Conheça nossa equipe de especialistas e agende seu próximo treino.
+          </p>
+          <div class="portal-grid">
+            <article class="personal-card">
+              <img
+                src="caminho/para/foto-ricardo.jpg"
+                alt="Foto do Personal Ricardo"
+              />
+              <div class="personal-info">
+                <h3>Ricardo Mendes</h3>
+                <span>Especialista em Força e Hipertrofia</span>
+                <div class="personal-social">
+                  <a href="#" title="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" title="WhatsApp"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </div>
+                <button class="btn-agendar">Agendar Horário</button>
+              </div>
+            </article>
+
+            <article class="personal-card">
+              <img
+                src="caminho/para/foto-juliana.jpg"
+                alt="Foto da Personal Juliana"
+              />
+              <div class="personal-info">
+                <h3>Juliana Alves</h3>
+                <span>Especialista em Funcional e Cardio</span>
+                <div class="personal-social">
+                  <a href="#" title="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" title="WhatsApp"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </div>
+                <button class="btn-agendar">Agendar Horário</button>
+              </div>
+            </article>
+
+            <article class="personal-card">
+              <img
+                src="caminho/para/foto-bruno.jpg"
+                alt="Foto do Personal Bruno"
+              />
+              <div class="personal-info">
+                <h3>Bruno Costa</h3>
+                <span>Especialista em Reabilitação e Mobilidade</span>
+                <div class="personal-social">
+                  <a href="#" title="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" title="WhatsApp"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </div>
+                <button class="btn-agendar">Agendar Horário</button>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div id="eventos" class="portal-tab-content">
+          <h1>Próximos Eventos</h1>
+          <p>Fique por dentro do que está rolando na nossa comunidade.</p>
+          <div class="eventos-grid">
+            <article class="evento-card-home">
+              <div class="evento-data"><span>OUT</span><strong>25</strong></div>
+              <div class="evento-info">
+                <h3>Workshop de Nutrição</h3>
+                <p>Aprenda a otimizar sua dieta para melhores resultados.</p>
+              </div>
+            </article>
+            <article class="evento-card-home">
+              <div class="evento-data"><span>NOV</span><strong>08</strong></div>
+              <div class="evento-info">
+                <h3>Yoga Sunset na Cobertura</h3>
+                <p>Uma aula especial para relaxar e recarregar as energias.</p>
+              </div>
+            </article>
+            <article class="evento-card-home">
+              <div class="evento-data"><span>DEZ</span><strong>06</strong></div>
+              <div class="evento-info">
+                <h3>Games de Fim de Ano</h3>
+                <p>
+                  Teste seus limites em nosso desafio interno com premiações.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div id="biblioteca-treinos" class="portal-tab-content">
+          <h1>Biblioteca de Treinos</h1>
+          <p>
+            Encontre a rotina perfeita para o seu objetivo de hoje, criada por
+            nossos especialistas.
+          </p>
+
+          <nav class="filtro-treinos">
+            <a href="#" class="active" data-filter="todos">Todos</a>
+            <a href="#" data-filter="hipertrofia">Hipertrofia</a>
+            <a href="#" data-filter="emagrecimento">Emagrecimento</a>
+            <a href="#" data-filter="funcional">Funcional</a>
+          </nav>
+
+          <div class="portal-grid">
+            <article class="workout-card" data-category="hipertrofia">
+              <img
+                src="caminho/para/imagem-treino1.jpg"
+                alt="Treino de Hipertrofia"
+              />
+              <div class="workout-info">
+                <div class="workout-tags">
+                  <span>Hipertrofia</span><span>60 min</span>
+                </div>
+                <h3>Peito & Tríceps Destruidor</h3>
+                <p>
+                  Foco em volume e intensidade para máximo ganho de massa
+                  muscular.
+                </p>
+                <button class="btn-ver-treino">Ver Treino Completo</button>
+              </div>
+            </article>
+
+            <article class="workout-card" data-category="emagrecimento">
+              <img
+                src="caminho/para/imagem-treino2.jpg"
+                alt="Treino para Emagrecimento"
+              />
+              <div class="workout-info">
+                <div class="workout-tags">
+                  <span>Emagrecimento</span><span>45 min</span>
+                </div>
+                <h3>HIIT Queima Total</h3>
+                <p>
+                  Um treino intervalado de alta intensidade para acelerar seu
+                  metabolismo.
+                </p>
+                <button class="btn-ver-treino">Ver Treino Completo</button>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div id="contato" class="portal-tab-content">
+          <h1>Entre em Contato</h1>
+          <p>Tem alguma dúvida ou precisa de ajuda? Fale conosco!</p>
+
+          <ul class="contato-lista">
+            <li>
+              <i class="fa-brands fa-whatsapp"></i>
+              <div class="info">
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/5511999999999" target="_blank"
+                  >(11) 99999-9999</a
+                >
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div class="info">
+                <h3>Email Principal</h3>
+                <a href="mailto:contato@fithub.com">contato@fithub.com</a>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="info">
+                <h3>Nosso Endereço</h3>
+                <p>Rua da Academia, 123 - Sua Cidade, UF</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+
+    <div class="sidebar-overlay"></div>
+    <footer></footer>
+  </body>
+</html>

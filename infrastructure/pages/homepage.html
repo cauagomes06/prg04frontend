@@ -3,33 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomePage</title>
+    <title>HomePage - Fit-Hub</title>
     <link
       rel="stylesheet"
       href="/infrastructure/assets/css/global/styles.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <script src="../assets/js/script.js" defer></script>
   </head>
   <body>
     <main>
       <header class="navbar">
-        <a href="" class="logo">
+        <a href="index.html" class="logo">
           <img src="../assets/images/principal.png" alt="Fit-Hub Logo" />
         </a>
         <nav>
           <ul>
-            <li><a href="#" id="abrirModalPlanos">PLANOS</a></li>
-            <li><a href="#">CONTATO</a></li>
-            <li><a href="#">EVENTOS</a></li>
+            <li><a href="#" class="js-abrir-modal">PLANOS</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+            <li><a href="#eventos">EVENTOS</a></li>
             <li>
-              <button class="btn-login">Login</button>
+              <a href="loginpage.html" class="btn-login">Login</a>
             </li>
           </ul>
         </nav>
@@ -38,7 +35,7 @@
       <section class="introduction-container">
         <h2>Bem-vindo(a) ao</h2>
         <p>Seu portal para uma vida saudável e ativa!</p>
-        <button class="btn">Comece Agora</button>
+        <a href="#" class="btn js-abrir-modal">Comece Agora</a>
       </section>
 
       <section class="descricao-container">
@@ -59,10 +56,10 @@
             valioso em sua saúde e felicidade a longo prazo.
           </p>
           <div class="botoes-descricao">
-            <a href="#" class="btn-principal" id="abrirModalPlanos"
+            <a href="#" class="btn-principal js-abrir-modal"
               >Conheça Nossos Planos</a
             >
-            <a href="#" class="btn-secundario">Ver Eventos</a>
+            <a href="#eventos" class="btn-secundario">Ver Eventos</a>
           </div>
         </div>
         <figure class="image-container-descricao">
@@ -103,55 +100,131 @@
           </p>
         </div>
       </section>
+
+      <section id="eventos" class="eventos-home-container">
+        <div class="eventos-titulo">
+          <h2>Próximos Eventos</h2>
+          <p>Fique por dentro do que está rolando na nossa comunidade.</p>
+        </div>
+        <div class="eventos-grid">
+          <article class="evento-card-home">
+            <div class="evento-data">
+              <span>OUT</span>
+              <strong>25</strong>
+            </div>
+            <div class="evento-info">
+              <h3>Workshop de Nutrição</h3>
+              <p>Aprenda a otimizar sua dieta para melhores resultados.</p>
+            </div>
+          </article>
+          <article class="evento-card-home">
+            <div class="evento-data">
+              <span>NOV</span>
+              <strong>08</strong>
+            </div>
+            <div class="evento-info">
+              <h3>Yoga Sunset na Cobertura</h3>
+              <p>Uma aula especial para relaxar e recarregar as energias.</p>
+            </div>
+          </article>
+          <article class="evento-card-home">
+            <div class="evento-data">
+              <span>DEZ</span>
+              <strong>06</strong>
+            </div>
+            <div class="evento-info">
+              <h3>Games de Fim de Ano</h3>
+              <p>Teste seus limites em nosso desafio interno com premiações.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contato" class="contato-home-container">
+        <div class="contato-texto">
+          <h2>Entre em Contato</h2>
+          <p>Tem alguma dúvida ou quer agendar uma visita? Fale conosco!</p>
+        </div>
+        <div class="contato-opcoes">
+          <a
+            href="https://wa.me/5511999999999"
+            target="_blank"
+            class="contato-card"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            <h3>WhatsApp</h3>
+            <p>(11) 99999-9999</p>
+          </a>
+          <a href="mailto:contato@fithub.com" class="contato-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email</h3>
+            <p>contato@fithub.com</p>
+          </a>
+          <div class="contato-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Endereço</h3>
+            <p>Rua da Academia, 123</p>
+          </div>
+        </div>
+      </section>
     </main>
 
-<div id="modalPlanos" class="modal-container">
-  <div class="modal-content">
-    <button class="fechar-modal" title="Fechar">&times;</button>
-    <h2>Escolha o Plano Ideal para Você</h2>
-    <p class="modal-subtitulo">Planos flexíveis para todos os objetivos.</p>
-    <div class="planos-wrapper">
+    <div id="modalPlanos" class="modal-container">
+      <div class="modal-content">
+        <button class="fechar-modal" title="Fechar">&times;</button>
+        <h2>Escolha o Plano Ideal para Você</h2>
+        <p class="modal-subtitulo">Planos flexíveis para todos os objetivos.</p>
+        <div class="planos-wrapper">
+          <div class="plano-card">
+            <h3>Plano Fit</h3>
+            <p class="preco">R$ 89,90<span>/mês</span></p>
+            <ul>
+              <li>✅ Acesso completo à musculação</li>
+              <li>✅ Acesso aos vestiários</li>
+              <li>✅ Participe dos jogos internos</li>
+              <li>❌ Aulas em grupo</li>
+            </ul>
+            <a href="loginpage.html" class="btn-assinar-secundario"
+              >Assinar Agora</a
+            >
+          </div>
 
-      <div class="plano-card">
-        <h3>Plano Fit</h3>
-        <p class="preco">R$ 89,90<span>/mês</span></p>
-        <ul>
-          <li>✅ Acesso completo à musculação</li>
-          <li>✅ Acesso aos vestiários</li>
-          <li>❌ Aulas em grupo</li>
-        </ul>
-        <a href="loginpage.html" class="btn-assinar-secundario">Assinar Agora</a>
+          <div class="plano-card destaque">
+            <span class="destaque-tag">MAIS POPULAR</span>
+            <h3>Plano Pro</h3>
+            <p class="preco">R$ 129,90<span>/mês</span></p>
+            <ul>
+              <li>✅ Acesso completo à musculação</li>
+              <li>✅ Acesso aos vestiários</li>
+              <li>✅ Aulas em grupo ilimitadas</li>
+              <li>✅ Participe dos jogos internos</li>
+            </ul>
+            <a href="loginpage.html?plano=pro" class="btn-assinar-principal"
+              >Assinar Agora</a
+            >
+          </div>
+
+          <div class="plano-card">
+            <h3>Plano Premium</h3>
+            <p class="preco">R$ 159,90<span>/mês</span></p>
+            <ul>
+              <li>✅ Acesso completo à musculação</li>
+              <li>✅ Acesso aos vestiários</li>
+              <li>✅ Aulas em grupo ilimitadas</li>
+              <li>✅ Participe dos jogos internos</li>  
+            </ul>
+            <a
+              href="loginpage.html?plano=premium"
+              class="btn-assinar-secundario"
+              >Assinar Agora</a
+            >
+          </div>
+        </div>
       </div>
-
-      <div class="plano-card destaque">
-        <span class="destaque-tag">MAIS POPULAR</span>
-        <h3>Plano Pro</h3>
-        <p class="preco">R$ 129,90<span>/mês</span></p>
-        <ul>
-          <li>✅ Acesso completo à musculação</li>
-          <li>✅ Acesso aos vestiários</li>
-          <li>✅ Aulas em grupo ilimitadas</li>
-        </ul>
-        <a href="loginpage.html" class="btn-assinar-principal">Assinar Agora</a>
-      </div>
-
-      <div class="plano-card">
-        <h3>Plano Premium</h3>
-        <p class="preco">R$ 159,90<span>/mês</span></p>
-        <ul>
-          <li>✅ Acesso completo à musculação</li>
-          <li>✅ Acesso aos vestiários</li>
-          <li>✅ Aulas em grupo ilimitadas</li>
-        </ul>
-        <a href="loginpage.html" class="btn-assinar-secundario">Assinar Agora</a>
-      </div>
-
     </div>
-  </div>
-</div>
-    
+
     <footer>
       <p>2025 Fit-Hub. Todos os direitos reservados.</p>
     </footer>
   </body>
-</html> 
+</html>
