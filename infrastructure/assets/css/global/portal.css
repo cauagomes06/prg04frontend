@@ -22,7 +22,6 @@ body {
  align-items: center;
   background-color: #0ad354;
   display: flex;
-  border: solid#0ad354;
   justify-content: space-between;
 }
 
@@ -589,7 +588,146 @@ body {
   text-decoration: underline;
   color: #0ad354;
 }
+/* ======================================================= */
+/* --- ESTILOS PARA CARDS DE TREINO QUADRADOS --- */
+/* ======================================================= */
 
+/* O container .portal-grid já coloca os itens lado a lado.
+   Ajustamos o tamanho mínimo dos cards aqui. */
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Diminuímos o tamanho base */
+  gap: 20px;
+}
+
+/* Regras para transformar o card em um quadrado */
+.personal-card.no-image {
+  aspect-ratio: 1 / 1; /* A propriedade mágica: força o card a ser quadrado */
+  display: flex; /* Ativa o flexbox para controle do alinhamento */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Removemos o padding extra que não é mais necessário */
+.personal-card.no-image .personal-info {
+  padding-top: 0;
+}
+
+/* As tags de informação do treino */
+.workout-tags {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #777;
+  font-weight: 500;
+  font-size: 0.9rem; /* Fonte um pouco menor para caber melhor */
+}
+
+.workout-tags span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Ajuste no botão para o novo formato */
+.personal-card.no-image .btn-agendar {
+    width: 90%; /* Ajusta a largura do botão */
+}
+/* --- ESTILOS PARA A ABA DE PERFIL --- */
+
+.perfil-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+.perfil-avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.perfil-info-principal {
+  flex-grow: 1;
+}
+.perfil-info-principal h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+.perfil-info-principal .email-privado {
+  margin: 5px 0 10px 0;
+  color: #777;
+  font-size: 1.1rem;
+}
+.plano-tag {
+  background-color: #e6fff1;
+  color: #0ad354;
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+.btn-editar-perfil {
+  background-color: #e9ecef;
+  color: #333;
+  border: none;
+  font-family: 'Alan Sans', sans-serif;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.perfil-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.perfil-card {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 25px;
+}
+.perfil-card h3 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 10px;
+}
+
+.stats-lista .stat-item, .pr-lista .pr-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 10px 0;
+}
+.stats-lista .stat-item strong, .pr-lista .pr-item strong {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.conquistas-grid {
+  display: flex;
+  gap: 15px;
+}
+.badge {
+  font-size: 2rem;
+  color: #ccc;
+}
+.badge.earned {
+  color: #0ad354;
+}
 @media (max-width: 992px) {
   .portal-container {
     grid-template-columns: 1fr;

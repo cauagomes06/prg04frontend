@@ -33,10 +33,16 @@
               >
             </li>
             <li>
+              <a href="#" data-target="meu-perfil"
+                ><i class="fas fa-user-circle"></i> Meu Perfil</a
+              >
+            </li>
+            <li>
               <a href="#" data-target="meu-treino"
                 ><i class="fas fa-dumbbell"></i> Meus Treinos</a
               >
             </li>
+
             <li>
               <a href="#" data-target="agenda"
                 ><i class="fas fa-calendar-alt"></i> Agenda de Aulas</a
@@ -86,10 +92,109 @@
         <div id="anuncios" class="portal-tab-content active">
           <h1>Anúncios Recentes</h1>
         </div>
+        <div id="meu-perfil" class="portal-tab-content">
+          <div class="perfil-header">
+            <div class="perfil-avatar">
+              <img src="caminho/para/foto-perfil.jpg" alt="Foto do Usuário" />
+            </div>
+            <div class="perfil-info-principal">
+              <h1>Carlos da Silva</h1>
+              <p class="email-privado">
+                <i class="fas fa-envelope"></i> carlos.silva@email.com
+              </p>
+              <span class="plano-tag">Plano Pro</span>
+            </div>
+            <div class="perfil-acoes">
+              <button class="btn-editar-perfil">Editar Perfil</button>
+            </div>
+          </div>
 
+          <div class="perfil-grid">
+            <div class="perfil-card">
+              <h3>Estatísticas</h3>
+              <div class="stats-lista">
+                <div class="stat-item">
+                  <span>Treinos este Mês</span>
+                  <strong>12</strong>
+                </div>
+                <div class="stat-item">
+                  <span>Membro desde</span>
+                  <strong>Jan/2024</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfil-card">
+              <h3>Meus Recordes (PRs)</h3>
+              <div class="pr-lista">
+                <div class="pr-item">
+                  <span>Agachamento Livre</span>
+                  <strong>140 kg</strong>
+                </div>
+                <div class="pr-item">
+                  <span>Supino Reto</span>
+                  <strong>105 kg</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="perfil-card">
+              <h3>Conquistas</h3>
+              <div class="conquistas-grid">
+                <div class="badge" title="Completou 100 treinos!">
+                  <i class="fas fa-medal"></i>
+                </div>
+                <div
+                  class="badge earned"
+                  title="Participou do Desafio de Burpees"
+                >
+                  <i class="fas fa-fire"></i>
+                </div>
+                <div class="badge" title="Membro por 1 ano">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div id="meu-treino" class="portal-tab-content">
-          <h1>Meus Treinos</h1>
-          <p>Aqui ficará a sua ficha de treino semanal.</p>
+          <div class="portal-grid">
+            <article class="personal-card no-image">
+              <div class="personal-info">
+                <h3>Peito & Tríceps</h3>
+                <span>Foco em Hipertrofia</span>
+                <div class="workout-tags">
+                  <span><i class="fas fa-clock"></i> 60 min</span>
+                  <span><i class="fas fa-fire"></i> Avançado</span>
+                </div>
+                <button class="btn-agendar">Ver Treino</button>
+              </div>
+            </article>
+
+            <article class="personal-card no-image">
+              <div class="personal-info">
+                <h3>HIIT Queima Total</h3>
+                <span>Foco em Emagrecimento</span>
+                <div class="workout-tags">
+                  <span><i class="fas fa-clock"></i> 30 min</span>
+                  <span><i class="fas fa-fire"></i> Intermediário</span>
+                </div>
+                <button class="btn-agendar">Ver Treino</button>
+              </div>
+            </article>
+
+            <article class="personal-card no-image">
+              <div class="personal-info">
+                <h3>Core & Mobilidade</h3>
+                <span>Foco em Funcional</span>
+                <div class="workout-tags">
+                  <span><i class="fas fa-clock"></i> 45 min</span>
+                  <span><i class="fas fa-fire"></i> Iniciante</span>
+                </div>
+                <button class="btn-agendar">Ver Treino</button>
+              </div>
+            </article>
+          </div>
         </div>
 
         <div id="agenda" class="portal-tab-content">
@@ -129,7 +234,8 @@
               </div>
             </div>
           </div>
-        </div>''
+        </div>
+        ''
 
         <div id="competicoes" class="portal-tab-content">
           <h1>Competições</h1>
@@ -147,7 +253,7 @@
           <div class="portal-grid">
             <article class="personal-card">
               <img
-                src="caminho/para/foto-ricardo.jpg"
+                src="../assets/images/foto twitter.jpg"
                 alt="Foto do Personal Ricardo"
               />
               <div class="personal-info">
@@ -167,7 +273,7 @@
 
             <article class="personal-card">
               <img
-                src="caminho/para/foto-juliana.jpg"
+                src="../assets/images/foto twitter.jpg"
                 alt="Foto da Personal Juliana"
               />
               <div class="personal-info">
@@ -187,7 +293,7 @@
 
             <article class="personal-card">
               <img
-                src="caminho/para/foto-bruno.jpg"
+                src="../assets/images/foto twitter.jpg"
                 alt="Foto do Personal Bruno"
               />
               <div class="personal-info">
