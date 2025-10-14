@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel de Administração</title>
+    <link rel="stylesheet" href="/infrastructure/assets/css/global/admin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Administração do Sistema</h1>
+      <p>Esta é a lista de usuários cadastrados no sistema.</p>
+
+      <div class="container-pesquisar">
+        <h3>Pesquisar usuários</h3>
+        <input type="text" name="nome" placeholder="Digite o nome ou email" />
+      </div>
+      <table id="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Editar</th>
+            <th>Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Ana Silva</td>
+            <td>ana.silva@example.com</td>
+            <td>
+              <button class="btn btn-editar" >Editar</button>
+            </td>
+            <td><button class="btn btn-delete">Excluir</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Bruno Costa</td>
+            <td>bruno.costa@example.com</td>
+            <td>
+              <button class="btn btn-editar">Editar</button>
+            </td>
+            <td>
+              <button class="btn btn-delete">Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Carla Martins</td>
+            <td>carla.martins@example.com</td>
+            <td>
+              <button class="btn btn-editar">Editar</button>
+            </td>
+            <td>
+              <button class="btn btn-delete">Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Daniel Oliveira</td>
+            <td>daniel.o@example.com</td>
+            <td>
+              <button class="btn btn-editar">Editar</button>
+            </td>
+            <td><button class="btn btn-delete">Excluir</button></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Eduarda Ferreira</td>
+            <td>eduarda.f@example.com</td>
+            <td>
+              <button class="btn btn-editar">Editar</button>
+            </td>
+            <td>
+              <button class="btn btn-delete">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Anton&family=Bebas+Neue&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Alan Sans", sans-serif;
+  color: #333;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.container-pesquisar {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.container-pesquisar input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #d5d4d4;
+  border-radius: 5px;
+  font-size: 16px;
+}
+table {
+  border: #d5d4d4 2px solid;
+  padding: 20px;
+  border-radius: 5px;
+}
+tbody {
+  text-align: left;
+  padding: 200px;
+  margin: 20px;
+}
+td {
+  border: #d5d4d4 0.5px solid;
+  padding: 10px 20px;
+}
+.btn-editar {
+  background-color: #0ad354;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn-delete {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn-editar:hover {
+  background-color: #07b145;
+  color: white;
+}
+.btn-delete:hover {
+  background-color: #b10000;
+  color: white;
+}
