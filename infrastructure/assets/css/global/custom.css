@@ -1,0 +1,85 @@
+/* --- FONTES --- */
+@import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap");
+
+body {
+  font-family: "Alan Sans", sans-serif ; 
+}
+
+/* --- CORES PERSONALIZADAS --- */
+:root {
+  --bs-success: #0ad354;
+  --bs-success-rgb: 10, 211, 84;
+  --bs-success-hover: #08a441; /* Um tom mais escuro para hover */
+  
+  --bs-success-subtle: #e6fff1;
+  --bs-success-emphasis: #0ad354; 
+}
+
+/* Aplica a cor personalizada aos botões .btn-success */
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-success);
+  --bs-btn-border-color: var(--bs-success);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--bs-success-hover);
+  --bs-btn-hover-border-color: var(--bs-success-hover);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--bs-success-hover);
+  --bs-btn-active-border-color: var(--bs-success-hover);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-success);
+  --bs-btn-disabled-border-color: var(--bs-success);
+}
+
+/* Cor do texto para links da navbar */
+.navbar-light .navbar-nav .nav-link.text-success {
+    color: var(--bs-success) ;
+}
+.navbar-light .navbar-nav .nav-link.text-success:hover {
+    color: var(--bs-success-hover) ;
+}
+
+.bg-success {
+    background-color: var(--bs-success) ;
+}
+
+.text-success {
+    color: var(--bs-success) ;
+}
+.bg-success-subtle {
+    background-color: var(--bs-success-subtle) ;
+}
+.text-success-emphasis {
+    color: var(--bs-success-emphasis) ;
+}
+
+
+/* --- ESTILOS ESPECÍFICOS --- */
+
+.introduction-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/infrastructure/assets/images/victor-freitas-WvDYdXDzkhs-unsplash.jpg"); 
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh; 
+}
+
+/* Efeito Hover nos Cards */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) ; 
+}
+
+/* Ajuste fino na sombra da navbar */
+.navbar {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) ; 
+}
+
+
+.modal .card.highlighted-plan {
+    box-shadow: 0 0 0 3px var(--bs-success) ; /* Adiciona uma borda sutil sem mudar o layout */
+    transform: scale(1.02);
+}
