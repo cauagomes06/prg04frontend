@@ -34,7 +34,7 @@ body {
 /* --- COLUNA DA IMAGEM --- */
 .login-imagem {
   background-image: linear-gradient(rgba(10, 211, 84, 0.8), rgba(8, 164, 65, 0.8)),
-      url("/infrastructure/assets/images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"); 
+      url("/assets/images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg"); 
   background-size: cover;
   background-position: center;
 }
